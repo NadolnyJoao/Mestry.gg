@@ -1,0 +1,60 @@
+#headertext {
+    text-align: center;
+    font-size: 20px;
+    background: #078585;
+    background: linear-gradient(90deg, rgba(7, 133, 133, 1) 0%, rgba(0, 255, 242, 1) 100%);
+    border-bottom: 2px solid rgb(0, 217, 255);
+    padding: 3px;
+
+
+
+}
+
+#viego {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  height: auto;
+  object-fit: cover;
+
+  
+}
+
+
+
+.container {
+  position: absolute; 
+  width: 100%;
+  height: auto;
+}
+
+.destaque {
+  background: linear-gradient(to right, #027cb4, #00e1ff);
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  font-size: 150px;
+
+}
+
+.sobreportexto {
+  position: absolute; /* Solta o texto para "flutuar" */
+  top: 35%;           /* Move para o meio vertical */
+  left: 25%;
+  transform: translateY(-50%); /* Centraliza perfeitamente no eixo Y */
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #116969;
+}
