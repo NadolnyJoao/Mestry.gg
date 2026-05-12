@@ -25,21 +25,54 @@
   z-index: 0;
 }
 
+#btn {
+  background-color: #027cb4;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  animation: pulsebtn 3s ease-in-out infinite;
+  
+}
+#btn:hover{
+  background-color: #2ea6dd;
+  font-size: 1.1rem;
+}
+#btn-container{
+    position: absolute;
+    bottom: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 @keyframes pulse {
   0%,                /* ainda nao entendi muito bem os keyframes em css, mas a logica nao é diferente de um editor de video */
   100% {
   opacity: 0;
   }
-
+  
   50% {
     opacity: 1;
   }
+  
 }
+@keyframes pulsebtn {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
 
 #viego {
   width: 100%;
   mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
-  height: auto;
+  height: 100%;
   object-fit: cover;
 
 
@@ -50,7 +83,11 @@
 .container {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100vh;
+  z-index: -1; /* joga pra trás de tudo */
+  display: flex;
+  align-items: center;
+
 }
 
 .destaque {
@@ -58,7 +95,7 @@
   background-clip: text;
   color: transparent;
   font-weight: 900;
-  font-size: 150px;
+  font-size: 10vw;
 
 }
 
@@ -71,7 +108,7 @@
   transform: translateY(-50%);
   /* centraliza a bomba */
   color: white;
-  font-size: 50px;
+  font-size: 3vw; /*ai bobao, n usa valores fixos tipo "150px" pq isso ai nao muda conforme o tamanho da tela, esse comando ai é o viewpoint, ele faz o objeto ser tantos % do tamanho total da tela*/
   text-align: center;
 }
 
@@ -84,6 +121,9 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   background-color: #116969;
 }
+
