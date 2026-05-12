@@ -1,13 +1,39 @@
 #headertext {
-    text-align: center;
-    font-size: 20px;
-    background: #078585;
-    background: linear-gradient(90deg, rgba(7, 133, 133, 1) 0%, rgba(0, 255, 242, 1) 100%);
-    border-bottom: 2px solid rgb(0, 217, 255);
-    padding: 3px;
+  text-align: center;
+  font-size: 20px;
+  background: #078585;
+  background: linear-gradient(90deg,
+      rgba(7, 133, 133, 1) 0%,
+      rgba(0, 255, 242, 1) 100%);
+  border-bottom: 2px solid rgb(0, 217, 255);
+  padding: 3px;
+  position: relative;
+  overflow: hidden;
+}
 
+#headertext * {
+  position: relative;
+  z-index: 1; /* usado para mexer nas camadas do site */
+}
 
+#headertext::after {  /* insere um "filho" depois do conteudo, é basicamente algo criado depois que o html cria o header */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 183, 255, 0.5);
+  animation: pulse 2s ease-in-out infinite; /* tempo de animação da pulsada */
+  z-index: 0;
+}
 
+@keyframes pulse {
+  0%,                /* ainda nao entendi muito bem os keyframes em css, mas a logica nao é diferente de um editor de video */
+  100% {
+  opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 #viego {
@@ -16,13 +42,13 @@
   height: auto;
   object-fit: cover;
 
-  
+
 }
 
 
 
 .container {
-  position: absolute; 
+  position: absolute;
   width: 100%;
   height: auto;
 }
@@ -37,24 +63,27 @@
 }
 
 .sobreportexto {
-  position: absolute; /* Solta o texto para "flutuar" */
-  top: 35%;           /* Move para o meio vertical */
+  position: absolute;
+  /* deixa o texto ficar aonde ele quiser */
+  top: 35%;
+  /* mexe na vertical */
   left: 25%;
-  transform: translateY(-50%); /* Centraliza perfeitamente no eixo Y */
+  transform: translateY(-50%);
+  /* centraliza a bomba */
   color: white;
   font-size: 50px;
   text-align: center;
 }
 
 * {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #116969;
+  background-color: #116969;
 }
