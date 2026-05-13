@@ -49,6 +49,14 @@
     left: 50%;
     transform: translateX(-50%);
 }
+#apresentacao {
+
+  position: absolute;
+  bottom: -3 rem;
+  left: 55%;
+  border: #005086;
+
+}
 
 
 @keyframes pulse {
