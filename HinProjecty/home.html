@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogue Como um Booster</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- HEADER BANNER -->
     <header>
-        <h1 id="headertext"><span>🔥 20% OFF em todos os serviços</span></h1>
+        <div id="headertext">
+            <span class="pulse-dot"></span>
+            <span>🔥 20% OFF em todos os serviços — por tempo limitado</span>
+            <span class="pulse-dot"></span>
+        </div>
     </header>
 
+    <!-- HERO -->
     <div class="container">
         <img src="imagens/viegowallpaper.png" alt="Viego - League of Legends" id="viego">
         <div class="sobreportexto">
@@ -21,37 +27,104 @@
     </div>
 
     <div id="btn-container">
-        <button id="btn">Saiba mais</button>
+        <a href="#sobre" id="btn">Saiba mais</a>
     </div>
 
-    <div id="retan-container">
-        <p id="textp1">
-            Não existe conta "zikada".
-            <br><br>
-            Seu time pode ser ruim (é verdade), mas isso não te
-            impede de subir de liga. O que te trava são ilusões,
-            jargões repetidos e desculpas que só servem para
-            justificar estagnação.
-            <br><br>
-            Se um Jungle Challenger (ou qualquer booster)
-            jogasse na sua conta, o climb aconteceria sem
-            dificuldade. Isso não é teoria, é prática comprovada.
-            <br><br>
-            Foram mais de 1.000 serviços de elojob entregues
-            em 5 anos, passando por todos os elos e até em
-            outros servidores como NA, EUW e LAS, mesmo
-            jogando com lag.
-            <br><br>
-            O que eu ofereço não é promessa vazia nem fórmula
-            mágica: é o mesmo conhecimento que uso para
-            carregar partidas, mostrado com transparência em
-            lives durante e após as aulas.
-            <br><br>
-            Se você quer parar de depender do time e subir por
-            mérito, é por aqui que começa!
-        </p>
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+        <div class="stat">
+            <span class="stat-num">1.000+</span>
+            <span class="stat-label">Serviços entregues</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+            <span class="stat-num">5</span>
+            <span class="stat-label">Anos de experiência</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Servidores atendidos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Transparência em live</span>
+        </div>
     </div>
-    <iframe id = apresentacao width="640" height="360" src="https://www.youtube.com/embed/IfXZWup8LMs?list=RDIfXZWup8LMs" title="Rap do Nagato / Pain (Naruto) | Tauz RapTributo 21" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre-section">
+        <div class="sobre-grid">
+
+            <div class="sobre-texto">
+                <h2 class="section-title">NÃO EXISTE <span class="destaque">CONTA ZIKADA</span></h2>
+                <div class="divider-line"></div>
+                <p>
+                    Seu time pode ser ruim — é verdade. Mas isso não te impede de subir de liga.
+                    O que te trava são ilusões, jargões repetidos e desculpas que só servem para justificar estagnação.
+                </p>
+                <p>
+                    Se um Jungle Challenger jogasse na sua conta, o climb aconteceria sem dificuldade.
+                    Isso não é teoria — é prática comprovada em mais de <strong>1.000 serviços</strong> entregues
+                    em 5 anos, nos servidores BR, NA, EUW e LAS.
+                </p>
+                <p>
+                    O que ofereço não é promessa vazia: é o mesmo conhecimento que uso para carregar partidas,
+                    mostrado com transparência em <strong>lives durante e após as aulas</strong>.
+                </p>
+                <p class="cta-frase">Se você quer parar de depender do time e subir por mérito — é por aqui que começa.</p>
+            </div>
+
+            <div class="sobre-video">
+                <div class="video-wrapper">
+                    <iframe
+                        id="apresentacao"
+                        src="https://www.youtube.com/embed/IfXZWup8LMs"
+                        title="Apresentação"
+                        frameborder="0"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos-section">
+        <h2 class="section-title center">O QUE EU <span class="destaque">OFEREÇO</span></h2>
+        <div class="divider-line center-line"></div>
+
+        <div class="cards">
+            <div class="card">
+                <span class="card-icon">🚀</span>
+                <h3>Elojob</h3>
+                <p>Suba de elo com segurança. Jogamos na sua conta com total discrição e eficiência.</p>
+            </div>
+            <div class="card card-destaque">
+                <span class="card-badge">Mais popular</span>
+                <span class="card-icon">🎓</span>
+                <h3>Coaching</h3>
+                <p>Sessões ao vivo onde você aprende a pensar como um Challenger. Resultados reais.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">🌎</span>
+                <h3>Multi-servidor</h3>
+                <p>Atendemos BR, NA, EUW e LAS. Mesmo com lag, o resultado é garantido.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <footer class="footer-cta">
+        <div class="footer-glow"></div>
+        <h2>PRONTO PARA <span class="destaque">SUBIR?</span></h2>
+        <p>Não espere mais uma temporada. Comece agora.</p>
+        <a href="#" class="btn-footer">Falar no WhatsApp 💬</a>
+    </footer>
+
 </body>
 </html>
