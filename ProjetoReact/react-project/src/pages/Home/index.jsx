@@ -23,7 +23,7 @@ function Home() {
         </div>
 
         <div className='absolute bottom-60 left-1/2 -translate-x-1/2'>
-          <button onClick={() => navigate('/pagamento')} className="transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110
+          <button onClick={() => navigate('/auth')} className="transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110
            rounded-lg bg-gradient-to-r from-stone-900 to-sky-900 hover:bg-gradient-to-br
             font-medium rounded-base text-xl px-10 py-5 text-center leading-5 
             animate-bounce
