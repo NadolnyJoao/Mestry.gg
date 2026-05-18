@@ -32,7 +32,7 @@ function Login() {
       <div className='flex items-center justify-center min-h-screen'>
         <div className='border-5 rounded-xl py-10 px-10'>
           <h1 className='text-center font-bold text-[30px] mb-15'>CADASTRO</h1>
-          {erro && <p className='text-red-500 text-center mb-4'>{erro}</p>}
+          {erro && <p className='text-red-500 text-center mb-4 '>{erro}</p>}
           <form onSubmit={handleSubmit}>
             <div className='flex flex-col gap-10'>
               <input value={nome} onChange={e => setNome(e.target.value)}
